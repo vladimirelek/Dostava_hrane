@@ -69,7 +69,10 @@ const MenuItem = (menuItem) => {
               <div className="p-2">
                 <h3 className="text-center text-gray-700">Izaberi velicinu</h3>
                 {sizes.map((size) => (
-                  <label className="flex items-center gap-2 p-4 border rounded-md mb-1">
+                  <label
+                    key={size.name}
+                    className="flex items-center gap-2 p-4 border rounded-md mb-1"
+                  >
                     <input
                       type="radio"
                       name="size"
@@ -87,7 +90,10 @@ const MenuItem = (menuItem) => {
               <div className="p-2">
                 <h3 className="text-center text-gray-700">Izaberi dodatak</h3>
                 {extraIngredientPrices.map((item) => (
-                  <label className="flex items-center gap-2 p-4 border rounded-md mb-1">
+                  <label
+                    key={item.name}
+                    className="flex items-center gap-2 p-4 border rounded-md mb-1"
+                  >
                     <input
                       type="checkbox"
                       name={item.name}

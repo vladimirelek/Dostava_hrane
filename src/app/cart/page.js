@@ -73,7 +73,7 @@ const Cart = () => {
           {cartProducts?.length === 0 && <h3>Vaša korpa je prazna</h3>}
           {cartProducts?.length > 0 &&
             cartProducts.map((product, index) => (
-              <div>
+              <div key={product.name}>
                 <CartProduct
                   product={product}
                   onRemove={removeCartProduct}

@@ -58,7 +58,7 @@ const Order = () => {
       {order && (
         <div className="flex justify-between gap-10">
             <div className="bg-gray-100 p-4 rounded-lg">
-            {order.cartProducts.map(product=>(<CartProduct product={product}/>))} 
+            {order.cartProducts.map(product=>(<div key={product.name}><CartProduct product={product}/></div>))} 
             <div className=" py-2 text-gray-500">
               <span className="text-black font-bold inline-block w-8">
               Cijena:{total}KM

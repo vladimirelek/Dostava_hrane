@@ -37,7 +37,7 @@ const MenuItems = () => {
       <div className="flex flex-row flex-wrap gap-5 mx-16">
         {menuItems != undefined &&
           menuItems.map((item) => (
-            <div className="flex flex-col items-center ">
+            <div key={item._id} className="flex flex-col items-center ">
               <h2 className="text-sm text-gray-500 mt-8 ">Uredi artikal</h2>
 
               <Link

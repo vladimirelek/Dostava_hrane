@@ -27,7 +27,10 @@ const Orders = () => {
       </div>
       <div className="mt-8">
         {orders.map((order) => (
-          <div className="bg-gray-100 m-3 p-4 rounded-lg flex justify-between items-center flex-wrap">
+          <div
+            key={order._id}
+            className="bg-gray-100 m-3 p-4 rounded-lg flex justify-between items-center flex-wrap"
+          >
             <div className="max-w-48">
               <div className="text-gray-700 m-3 text-black-100">
                 {order.userEmail}

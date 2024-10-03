@@ -30,7 +30,10 @@ const UserPage = () => {
       <div>
         {users.length > 0 &&
           users.map((user) => (
-            <div className="bg-gray-100 rounded-lg mb-2 p-1 px-4 flex items-center gap-4 max-w-lg m-auto">
+            <div
+              key={user._id}
+              className="bg-gray-100 rounded-lg mb-2 p-1 px-4 flex items-center gap-4 max-w-lg m-auto"
+            >
               <div className="flex justify-between gap-4 grow">
                 <div className="text-gray-900">
                   {!!user.name && <span>{user.name}</span>}

@@ -116,7 +116,7 @@ const Categories = () => {
           <li>
             {categories.length > 0 &&
               categories.map((item) => (
-                <div className="my-3 ">
+                <div className="my-3 " key={item._id}>
                   <h2 className="text-md text-gray-400">Uredi kategoriju</h2>
                   <div className="flex justify-between items-center bg-gray-100 rounded-lg p-2 px-4 gap-2">
                     <span>{item.name}</span>

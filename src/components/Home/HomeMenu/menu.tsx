@@ -35,14 +35,16 @@ const Menu = () => {
       <div className="flex justify-start gap-10 flex-wrap mx-44">
         {bestSeller.length > 0 &&
           bestSeller.map((item) => (
-            <MenuItem
-              name={item.name}
-              price={item.price}
-              description={item.description}
-              sizes={item.sizes}
-              extraIngredients={item.extraIngridientPrices}
-              image={item.image}
-            />
+            <div key={item._id}>
+              <MenuItem
+                name={item.name}
+                price={item.price}
+                description={item.description}
+                sizes={item.sizes}
+                extraIngredients={item.extraIngridientPrices}
+                image={item.image}
+              />
+            </div>
           ))}
       </div>
     </div>

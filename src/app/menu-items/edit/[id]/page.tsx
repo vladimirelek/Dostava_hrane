@@ -177,7 +177,9 @@ const EditMenuItems = () => {
             >
               {categories.length > 0 &&
                 categories.map((item) => (
-                  <option value={item._id}>{item.name}</option>
+                  <option value={item._id} key={item._id}>
+                    {item.name}
+                  </option>
                 ))}
             </select>
             <h2 className="text-md text-gray-400">Cijena</h2>

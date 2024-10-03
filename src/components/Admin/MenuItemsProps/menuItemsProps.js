@@ -29,7 +29,7 @@ const MenuItemPriceProps = ({ name, label, props, setProps }) => {
         <label className="text-md text-gray-600">{name}</label>
         {props.length > 0 &&
           props.map((item, index) => (
-            <div className="flex gap-2 items-center">
+            <div key={item.name} className="flex gap-2 items-center">
               <input
                 type="text"
                 placeholder="Naziv"

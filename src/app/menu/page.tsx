@@ -36,7 +36,7 @@ const Menu = () => {
     <section>
       {categories?.length > 0 &&
         categories?.map((category) => (
-          <div>
+          <div key={category._id}>
             <h1 className=" text-orange-500 text-3xl font-extrabold font lg:text-4xl m-10">
               {category.name}
             </h1>
@@ -45,7 +45,7 @@ const Menu = () => {
                 menuItems
                   .filter((item) => item.category === category._id)
                   .map((item) => (
-                    <div>
+                    <div key={item._id}>
                       <MenuItem
                         name={item.name}
                         description={item.description}
