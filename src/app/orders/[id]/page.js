@@ -68,7 +68,7 @@ const Order = () => {
             </div>
             
           <div>
-          <AdressForm disabled={true} adressProps={...order} />
+          <AdressForm disabled={true} adressProps={order} />
           {admin && <div>
             <input
               id="paid"

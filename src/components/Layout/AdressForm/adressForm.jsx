@@ -1,5 +1,8 @@
 const AdressForm = ({ adressProps = {}, setAdressProps, disabled = false }) => {
-  const { phone, street, postalCode, city } = adressProps;
+  const phone = adressProps.phone;
+  const street = adressProps.street;
+  const postalCode = adressProps.postalCode;
+  const city = adressProps.city;
 
   return (
     <>
