@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -21,6 +22,24 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/api/auth/[...nextauth]/route.js",
+    "src/app/api/register/route.js",
+    "src/menu/useProfile.jsx",
+    "src/menu/useProfile.js",
+    "src/menu/useProfile.js",
+    "src/app/menu-items/edit/[id]/page.js",
+    "src/components/Admin/MenuItemsProps/menuItemsProps.js",
+    "src/components/Home/HomeMenu/MenuItem/menuItem.js",
+    "src/components/Layout/Header/header.js",
+    "src/components/Home/HomeMenu/MenuItem/menuItemsBox.js",
+    "src/components/Layout/Header/NavButton/navButton.jsx",
+    "src/components/Layout/AdressForm/adressForm.jsx",
+    "src/components/Layout/UserForm/form.jsx"
+  ],
   "exclude": ["node_modules"]
 }
