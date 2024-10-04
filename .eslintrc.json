@@ -1,8 +1,4 @@
 {
-  "extends": "next",
-  "build": {
-    "ignore": ["node_modules", ".next", ".vercel"]
-  },
   "rules": {
     "react/no-unescaped-entities": "off",
     "@next/next/no-page-custom-font": "off"
