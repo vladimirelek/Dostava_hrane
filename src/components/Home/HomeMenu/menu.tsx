@@ -41,7 +41,7 @@ const Menu = () => {
                 price={item.price}
                 description={item.description}
                 sizes={item.sizes}
-                extraIngredients={item.extraIngridientPrices}
+                extraIngredientPrices={item.extraIngridientPrices}
                 image={item.image}
               />
             </div>
