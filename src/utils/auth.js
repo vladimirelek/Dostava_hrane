@@ -1,10 +1,16 @@
-import { User } from "@/models/User";
-import mongoose from "mongoose";
-import NextAuth, { getServerSession } from "next-auth";
-import CredentialsProvider from "next-auth/providers/credentials";
-import bcrypt from "bcrypt";
-import { useSession } from "next-auth/react";
-
+import { CredentialsProvider } from "node_modules/next-auth/providers";
+export async function isAdmin() {
+  const session = await getServerSession(authOptions);
+  const userEmail = session.userEmail;
+  if (!userEmail) {
+    return false;
+  }
+  const userInfo = await User.findOne({ email: userEmail });
+  if (!userInfo) {
+    return false;
+  }
+  return userInfo.admin;
+}
 export const authOptions = {
   secret: process.env.SECRET,
   providers: [

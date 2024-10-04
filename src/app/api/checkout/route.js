@@ -2,7 +2,6 @@ import mongoose from "mongoose";
 import { getServerSession } from "next-auth";
 import { authOptions } from "./../../api/auth/[...nextauth]/route";
 import { Order } from "../../../models/Order";
-const stripe = require("stripe");
 export async function POST(req) {
   mongoose.connect(process.env.MONGO_URL);
   const { cartProducts, adress } = await req.json();
