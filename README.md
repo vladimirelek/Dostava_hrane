@@ -7,7 +7,7 @@ INSTALACIJA
 Potrebno je instalirati Node.
 Nakon preuzimanja aplikacije potrebno je instalirati sve korištene pakete sa naredbom npm i.
 
-Kada to uradimo potrebno je dodati .env fajl sa sledećim podacima
+Kada to uradimo potrebno je dodati .env.local fajl u glavni folder sa sledećim podacima
 
  MONGO_URL=mongodb+srv://vladimirelek0:g1uKaIKHvdGcEedB@cluster0.j9gbvup.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
  
