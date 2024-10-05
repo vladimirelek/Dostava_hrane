@@ -3,6 +3,7 @@ APLIKACIJA ZA DOSTAVU HRANE
 Web aplikacija koja služi za online naručivanje hrane
 
 INSTALACIJA
+
 Potrebno je instalirati Node.
 Nakon preuzimanja aplikacije potrebno je instalirati sve korištene pakete sa naredbom npm i.
 
