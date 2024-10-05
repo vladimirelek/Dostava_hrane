@@ -1,40 +1,45 @@
-<<<<<<< HEAD
-# Dostava_hrane
-=======
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+APLIKACIJA ZA DOSTAVU HRANE
 
-## Getting Started
+Web aplikacija koja služi za online naručivanje hrane
 
-First, run the development server:
+INSTALACIJA
+Potrebno je instalirati Node.
+Nakon preuzimanja aplikacije potrebno je instalirati sve korištene pakete sa naredbom npm i.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Kada to uradimo potrebno je dodati .env fajl sa sledećim podacima
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ MONGO_URL=mongodb+srv://vladimirelek0:g1uKaIKHvdGcEedB@cluster0.j9gbvup.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+ 
+ NEXTAUTH_URL="http://localhost:3000/"
+ 
+ SECRET="blablabla"
+ 
+ EDGE_STORE_ACCESS_KEY=UM9b9PgDnObEzUiCdoijUDirDz6YbfnC
+ 
+EDGE_STORE_SECRET_KEY=bwK7vgoSTrrkdt4M4h6WRFltdqA9PbL2busKzwimyoKzROJU
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Nakon dodavanja ključeva koji si neophodni za rad aplikacije, potrebno je pokrenuti aplikaciju komandom npm run dev
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+TEHNOLOGIJE
 
-## Learn More
+Next.js
 
-To learn more about Next.js, take a look at the following resources:
+Tailwind CSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+MongoDB
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+FUKNCIONALNOSTI I KORIŠTENJE
 
-## Deploy on Vercel
+Aplikacija omogućava korisniku da vidi osnovne informacije o poslastičarnici, da napravi nalog i pomoću njega se prijavi. Nakon prijave, korisnik može unositi osnovne informacije o sebi, koje se prilikom svake narudžbe automatski popunjavaju. Artikle može dodavati u korpu, pri čemu ima mogućnost da odabere dodatke u vidu preliva i veličine artikla koji naručuje. Nakon odabira, korisnik može pristupiti korpi gdje se nalaze informacije o dostavi. Poslije naručivanja, ima mogućnost da vidi sve dostave, kao i status plaćanja dostave i osnovne podatke o njoj.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Administrator ima mnogo više funkcionalnosti. On može korisniku dodijeliti administratorska ovlaštenja. Osim toga, ima pristup svim korisnicima, može mijenjati sadržaj i brisati korisnike. Administrator ima uvid u sve dostave i njihove osnovne podatke, te može označiti da je dostava plaćena nakon što korisnik izvrši uplatu. Svaki artikal pripada određenoj kategoriji, a administrator može dodavati, brisati i uređivati kategorije. Takođe, ima mogućnost dodavanja novih artikala, brisanja i uređivanja postojećih. Administrator može svakom artiklu dodijeliti dodatne veličine i prelive u zavisnosti od specifičnosti artikla.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
->>>>>>> df030c7 (Initial commit from Create Next App)
+Aplikacija je responzivna, što znači da se može koristiti na uređajima svih veličina. Ova funkcionalnost je postignuta uz pomoć Flexbox-a, koji omogućava fleksibilno raspoređivanje elemenata unutar korisničkog interfejsa. Za vizuelni izgled aplikacije korišćen je Tailwind CSS, što omogućava brzo i efikasno stilizovanje elemenata bez potrebe za pisanjem opsežnih CSS pravila. Ova kombinacija tehnologija obezbeđuje optimalno korisničko iskustvo na mobilnim telefonima, tabletima i desktop računarima, prilagođavajući se različitim veličinama ekrana.
+
+Administrator:
+
+username:vladimirelek@gmail.com password:12345678
+
+Korisnik:
+
+username:stefanlalovic@gmail.com password:12345678
