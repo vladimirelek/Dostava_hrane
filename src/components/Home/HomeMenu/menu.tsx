@@ -26,7 +26,7 @@ const Menu = () => {
     });
   }, []);
   return (
-    <div className="flex justify-center flex-col items-center">
+    <div className="flex justify-center flex-col items-center gap-4">
       <div className="flex flex-col my-16 gap-4 text-orange-600">
         <h2 className="text-3xl font-extrabold font lg:text-5xl">
           NAJBOLJE PRODAVANI

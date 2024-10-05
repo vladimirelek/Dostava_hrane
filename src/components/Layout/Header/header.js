@@ -16,12 +16,12 @@ const Header = () => {
     <header className="flex justify-between items-start bg-[url('/images/naslovna.webp')] h-48 px-6 py-3">
       <Link
         href={"/"}
-        className="font-bold text-3xl font-pacific text-orange-400"
+        className="font-bold text-2xl font-pacific text-orange-400"
       >
         Caffe slastičarna & lounge bar
       </Link>
       <NavButton />
-      <nav className="hidden lg:flex justify-evenly gap-7 text-2xl font-semibold text-gray-500 items-center">
+      <nav className="hidden lg:flex justify-evenly gap-7 text-xl font-semibold text-gray-300 items-center">
         <Link href={"/"}>Početna</Link>
         <Link href={"/menu"}>Meni</Link>
         <Link href={"/#contact"}>Kontakt</Link>
@@ -32,7 +32,7 @@ const Header = () => {
               onClick={() => {
                 signOut();
               }}
-              className="bg-orange-600 text-white rounded-3xl w-46 h-13 flex justify-center items-center"
+              className="bg-orange-600 text-white rounded-3xl w-36 h-13 flex justify-center items-center"
             >
               Izloguj se
             </button>

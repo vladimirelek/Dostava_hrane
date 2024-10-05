@@ -1,4 +1,6 @@
 import { CredentialsProvider } from "node_modules/next-auth/providers";
+import { getServerSession } from "next-auth";
+import { User } from "../models/User";
 export async function isAdmin() {
   const session = await getServerSession(authOptions);
   const userEmail = session.userEmail;

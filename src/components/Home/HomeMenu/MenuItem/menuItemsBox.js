@@ -3,7 +3,7 @@ const MenuItemBox = ({ handleAddToCart, ...item }) => {
   const { name, price, description, sizes, extraIngredientPrices, image } =
     item;
   return (
-    <div className="flex flex-col gap-1 items- w-64 min-h-80 md:w-80 md:h-[500px]  bg-gradient-to-r from-gray-200 to-gray-400  p-4 rounded-lg text-center group hover:border-orange-700 hower:shadow-black/25 transition-all sm:justify-center hover:cursor-pointer border-2">
+    <div className="flex flex-col  w-64  min-h-72 md:w-72 md:h-[470px]  bg-gradient-to-r from-gray-200 to-gray-400  p-4 rounded-lg text-center group hover:border-orange-700 hower:shadow-black/25 transition-all sm:justify-center hover:cursor-pointer border-2">
       <div className="text-center">
         <Image
           src={image}
